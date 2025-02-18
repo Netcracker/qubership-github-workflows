@@ -1,5 +1,4 @@
 ---
-
 # Input parameter project_type is required. It can have one of the next values:
 # - go
 # - python
@@ -75,7 +74,7 @@ runs:
       uses: actions/setup-java@v4
       with:
         java-version: "21"
-        distribution: 'temurin'
+        distribution: "temurin"
 
     - name: Maven build
       if: ${{ inputs.project_type == 'maven' }}
