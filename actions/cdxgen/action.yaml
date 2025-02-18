@@ -1,5 +1,4 @@
 ---
-
 # Input parameter project_type is required. It can have one of the next values:
 # - go
 # - python
@@ -75,7 +74,7 @@ runs:
       uses: actions/setup-java@v4
       with:
         java-version: "21"
-        distribution: 'temurin'
+        distribution: "temurin"
         gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
         gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
